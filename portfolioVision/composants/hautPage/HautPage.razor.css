@@ -1,0 +1,64 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-block {
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/imageFondHautPage.png');
+    width: 93%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.inner-block {
+    border-radius: 20px;
+    padding: 40px;
+    text-align: left; /* Alignement à gauche */
+}
+
+h1 {
+    color: #0BDCF3;
+    margin-bottom: 20px; /* Ajout de marge en bas pour l'espace visuel */
+    font-size: 60px;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    font-size: 18px; /* Ajustement de la taille du texte */
+
+    width : 700px;
+}
+
+.larger-text {
+    font-size: 24px; /* Taille plus grande pour ce texte spécifique */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: #0BDCF3;
+    color: black;
+
+    font-weight : bold;
+
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+    button:hover {
+        background-color: white;
+        color: #0BDCF3;
+    }
