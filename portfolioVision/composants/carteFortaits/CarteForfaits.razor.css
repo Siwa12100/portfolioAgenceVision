@@ -1,0 +1,57 @@
+﻿body {
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fond noir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carte {
+    background-color: #001f3f; /* Fond bleu foncé */
+    border: 2px solid #0074cc; /* Bordure bleue claire */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px;
+    color: #fff; /* Texte blanc */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.prix {
+    font-size: 20px;
+    color: #0074cc; /* Texte bleu clair */
+}
+
+.caracteristiques {
+    list-style-image: url('/images/puceCarte.png'); /* Image de puce */
+    padding-left: 0; /* Supprime la marge à gauche de la liste */
+}
+
+    .caracteristiques li {
+        font-size: 18px;
+    }
+
+.bouton {
+    background-color: #0074cc; /* Fond bleu clair */
+    color: #fff; /* Texte blanc */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .bouton:hover {
+        background-color: #005b99; /* Changement de couleur au survol */
+    }
