@@ -13,6 +13,20 @@ body {
     /*border: 3px solid red;*/
 }
 
+.sectionCartes {
+    width: 70%;
+    margin: 0 auto; /* Centre la section horizontalement */
+    display: flex;
+    justify-content : space-evenly;/* Espace entre les cartes */
+
+    margin-top : 20px;
+}
+
+/* Styles spécifiques aux cartes (ajuster si nécessaire) */
+/*.CarteForfaits {
+    width: 40%;
+    border: 30px solid green;
+}*/
 
 
 

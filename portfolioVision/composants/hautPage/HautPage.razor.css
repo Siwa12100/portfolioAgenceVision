@@ -32,7 +32,7 @@
     padding: 40px;
     text-align: left; /* Alignement à gauche */
 
-    width: 80%;
+    width: 50%;
     /*border: 3px solid green;*/
 
 
@@ -42,10 +42,12 @@
 
 h1 {
 
-    margin-top : 57px;
-    color: #0BDCF3;
+    /*margin-top : 57px;*/
+    /*color: #0BDCF3;*/
+
+    color : white;
     margin-bottom: 20px; /* Ajout de marge en bas pour l'espace visuel */
-    font-size: 62px;
+    font-size: 70px;
     font-weight: bold;
 
 
@@ -53,29 +55,27 @@ h1 {
 
 p {
     color: white;
-    font-size: 18px; /* Ajustement de la taille du texte */
-
-    width: 700px;
+    width: 460px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
 }
 
 .larger-text {
-    font-size: 24px; /* Taille plus grande pour ce texte spécifique */
+    font-size: 21px; /* Taille plus grande pour ce texte spécifique */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
-    background-color: #0BDCF3;
-    color: black;
-
-    font-weight : bold;
-
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    font-weight: bold;
     border: 3px solid white;
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 
+    color : white;
+
+    transition: background-color 0.3s, color 0.3s;
 }
 
     button:hover {
