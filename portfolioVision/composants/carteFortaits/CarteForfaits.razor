@@ -1,14 +1,16 @@
 ﻿<div class="carte">
 
-    <h2>Titre de la carte</h2>
+    <h2>@Titre</h2>
 
-    <p class="prix">19.99 €</p>
+    <p class="prix">@Prix</p>
 
     <ul class="caracteristiques">
 
-        <li>Caractéristique 1</li>
-        <li>Caractéristique 2</li>
-        <li>Caractéristique 3</li>
+        @foreach (var Caracteristique in Caracteristiques)
+        {
+            <li>@Caracteristique</li>
+        }
+
     </ul>
     <button class="bouton">Commencer</button>
 </div>

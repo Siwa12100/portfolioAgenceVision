@@ -21,7 +21,14 @@ body {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
 
-    height : 100%;
+    height: 80%;
+
+    width: 40%;
+}
+
+
+li {
+    margin-bottom : 6px;
 }
 
 h2 {
@@ -48,21 +55,26 @@ h2 {
     }
 
 .bouton {
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    /*background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);*/
+
+    background-color: #0BDCF3;
+    
     border: none;
     border-radius: 100px;
     padding: 10px 20px;
-    color: white;
+
+
+    /*color: white;*/
+    color : black;
+
+
     font-weight: bold;
-
-
     border: 3px solid white;
     font-size: 19px;
     cursor: pointer;
     transition: background-color 0.3s;
-
-    margin-top : 10px;
+    margin-top: 10px;
 }
 
     .bouton:hover {
