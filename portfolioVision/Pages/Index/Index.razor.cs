@@ -1,4 +1,6 @@
-﻿namespace portfolioVision.Pages.Index
+﻿using portfolioVision.modele.reseau;
+
+namespace portfolioVision.Pages.Index
 {
     public partial class Index
     {
@@ -13,8 +15,27 @@
         private List<String> CaracteristiquesCarte1;
         private List<String> CaracteristiquesCarte2;
 
+        private List<Reseau> Reseaux;
+
 
         protected override async Task OnInitializedAsync()
+        {
+            
+            await this.InitialisationCartes();
+            await this.InitialisationReseaux();
+
+            Console.WriteLine("Passage dans le index.razor.cs ! ");
+
+            foreach (Reseau r in this.Reseaux)
+            {
+                Console.WriteLine("img : " + r.EmplacementImage + " ; contenu : " + r.Contenu + ".");
+            }
+
+
+            base.OnInitializedAsync();
+        }
+
+        private async Task InitialisationCartes()
         {
             this.TitreCarte1 = "Format court";
             this.TitreCarte2 = "Format long";
@@ -41,18 +62,16 @@
             this.CaracteristiquesCarte2.Add("Animations Graphiques");
             this.CaracteristiquesCarte2.Add("Sous-titrage");
             this.CaracteristiquesCarte2.Add("Adaptation à la charte graphique");
-
-
-
-
-
-
-
-            base.OnInitializedAsync();
         }
 
-        private async Task InitialisationCartes()
+        private async Task InitialisationReseaux()
         {
+
+            
+            this.Reseaux = new List<Reseau>();
+            this.Reseaux.Add(new Reseau("/images/Fichier2.png", "azogs.vision@gmail.com"));
+            this.Reseaux.Add(new Reseau("/images/Fichier3.png", "06.45.82.11.37"));
+            this.Reseaux.Add(new Reseau("/images/Fichier4.png", "azogs_"));
 
         }
     }
