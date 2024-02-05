@@ -4,17 +4,13 @@
 }
 
 .espacement-gauche {
-    /*border: 3px solid white;*/
-
     width : 6%;
 }
 
 .main-block {
     background-size: cover;
     background-position: center;
-
     background-image: url('/images/imageFondHautPage.png');
-
     width: 93%;
     height: 70vh;
     margin: 0 auto;
@@ -23,8 +19,6 @@
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
-
-
     align-items: center;
     padding: 20px;
 }
@@ -32,57 +26,49 @@
 .inner-block {
     border-radius: 70px;
     padding: 40px;
-    text-align: left; /* Alignement à gauche */
-
+    text-align: left;
     width: 50%;
-    -webkit-backdrop-filter: blur(15px); /* assure la compatibilité avec safari */
-    backdrop-filter: blur(15px) grayscale(0.5) opacity(0.8);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    /*margin-top : 57px;*/
-    /*color: #0BDCF3;*/
-
     color: white;
-    margin-bottom: 20px; /* Ajout de marge en bas pour l'espace visuel */
-    font-size: 70px;
+    margin-bottom: 20px;
+
+    font-size: 5vw;
     font-weight: bold;
-
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
-
+    /*text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);*/
 }
 
 p {
     color: white;
-    width: 460px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+    /*text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);*/
 }
 
-
-
-
 .larger-text {
-    font-size: 21px; /* Taille plus grande pour ce texte spécifique */
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7vw;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
 button {
-    /*background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);*/
-    /*background-color: #0BDCF3;*/
+    background-color: #0BDCF3;
 
-    background: rgb(0,106,124);
-    background: linear-gradient(274deg, rgba(0,106,124,1) 6%, rgba(29,200,210,1) 68%);
-    font-weight: bold;
-    /*border: 3px solid white;*/
     border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    /*color: white;*/
-    color: white;
+
+    padding-left : 3%;
+    padding-right : 3%;
+    padding-top : 2%;
+    padding-bottom : 2%;
+
+    font-size : 1.4vw;
+
+    border : none;
+
+    width : 38%;
+
+    font-weight: bold;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    color: black;
     transition: background-color 0.3s, color 0.3s;
-    border: 1px solid white;
 }
 
     button:hover {

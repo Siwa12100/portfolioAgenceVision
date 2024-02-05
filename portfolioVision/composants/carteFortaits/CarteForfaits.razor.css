@@ -1,8 +1,4 @@
 ﻿body {
-}
-
-
-body {
     margin: 0;
     padding: 0;
     background-color: black;
@@ -19,10 +15,8 @@ body {
     padding: 37px;
     color: #fff; /* Texte blanc */
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
-
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     height: 80%;
-
     width: 40%;
 }
 
