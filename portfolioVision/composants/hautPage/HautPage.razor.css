@@ -1,6 +1,5 @@
 ﻿body {
-    margin: 0;
-    padding: 0;
+    
 }
 
 .espacement-gauche {
@@ -11,32 +10,49 @@
     background-size: cover;
     background-position: center;
     background-image: url('/images/imageFondHautPage.png');
+
     width: 93%;
-    height: 70vh;
-    margin: 0 auto;
-    margin-top: 50px;
-    box-sizing: border-box;
+    /*height: 70vh;*/
+    height : 100vh;
+
+    margin-top: 3%;
+
     border-radius: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+
+    /*border : 3px green solid;*/
 }
 
 .inner-block {
-    border-radius: 70px;
-    padding: 40px;
+    /* border-radius: 70px;*/
+    /*padding: 40px;*/
+
+    filter: blur(100px);
+    /*background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));*/
+    background: radial-gradient(circle at 50% 50%, #0BDCF3, rgba(76, 0, 255, 0));
+
+    opacity: 0.4;
     text-align: left;
     width: 50%;
+    /*border : orange solid 3px;*/
 }
 
 h1 {
     color: white;
     margin-bottom: 20px;
-
     font-size: 5vw;
     font-weight: bold;
+
+    /*background: rgb(11,220,243);
+    background: radial-gradient(circle, rgba(11,220,243,0.17988445378151263) 0%, rgba(251,251,251,0) 83%);*/
+
     /*text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);*/
+    /*border : 3px solid blue;*/
+
+
 }
 
 p {
@@ -47,23 +63,20 @@ p {
 .larger-text {
     font-size: 1.7vw;
     font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+
+    /*border : 3px solid pink;*/
 }
 
 button {
     background-color: #0BDCF3;
+    border-radius: 14px;
 
-    border-radius: 20px;
-
-    padding-left : 3%;
-    padding-right : 3%;
     padding-top : 2%;
     padding-bottom : 2%;
 
     font-size : 1.4vw;
-
     border : none;
-
-    width : 38%;
+    width : 27%;
 
     font-weight: bold;
     font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
@@ -74,3 +87,35 @@ button {
     button:hover {
         color: black;
     }
+
+/*.css-blurry-gradient {*/
+    
+    /*top: 50%;
+    left: 50%;*/
+
+    /*transform: translate(-50%, -50%);*/
+
+    /*width: 800px;
+    height: 800px;
+
+    border-radius: 0;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    opacity: 0.2;*/
+
+    /*border : red 3px solid;*/
+/*}*/
+
+
+/*.css-blurry-gradient {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 800px;
+    height: 800px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 50% 50%,rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+    opacity: 0.2;
+}*/

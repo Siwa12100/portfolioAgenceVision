@@ -6,9 +6,12 @@
 
 .texte {
     /*border: 3px solid orange;*/
+
     color: white;
-    font-size: 20px; 
-    width: 80%;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+        
+    font-size: 20px;
+    width: 70%;
 
     display: flex;
     justify-content: center;
