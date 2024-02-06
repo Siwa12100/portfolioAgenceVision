@@ -26,19 +26,33 @@
     /*border : 3px green solid;*/
 }
 
-.inner-block {
-    /* border-radius: 70px;*/
-    /*padding: 40px;*/
-
-    filter: blur(100px);
-    /*background: radial-gradient(circle at 50% 50%, rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));*/
-    background: radial-gradient(circle at 50% 50%, #0BDCF3, rgba(76, 0, 255, 0));
-
-    opacity: 0.4;
-    text-align: left;
+.lumiere-bleue {
+    position: relative;
     width: 50%;
-    /*border : orange solid 3px;*/
 }
+
+    .lumiere-bleue::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        opacity : 0.7;  
+
+        filter: blur(70px);
+        background: radial-gradient(circle at 50% 50%, #0BDCF3, rgba(76, 0, 255, 0));
+    }
+
+.inner-block {
+    text-align: left;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Assure que le contenu apparaisse au-dessus du pseudo-élément flou */;
+    padding: 20px; /* Ajoutez un padding pour que le contenu soit visible */
+}
+
 
 h1 {
     color: white;
