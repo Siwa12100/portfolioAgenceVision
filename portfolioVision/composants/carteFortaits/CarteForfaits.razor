@@ -4,13 +4,37 @@
 
     <p class="prix">@Prix</p>
 
-    <ul class="caracteristiques">
+    <div class="separation">
 
-        @foreach (var Caracteristique in Caracteristiques)
-        {
-            <li>@Caracteristique</li>
-        }
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
 
-    </ul>
-    <button class="bouton">Commencer</button>
+    </div>
+
+    <div class="caracteristiques">
+        <ul>
+
+            @foreach (var Caracteristique in Caracteristiques)
+            {
+                <li>@Caracteristique</li>
+            }
+
+        </ul>
+    </div>
+
+    @* <button class="bouton">Commencer</button> *@
 </div>

@@ -1,76 +1,108 @@
 ﻿body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    
 }
 
 .carte {
     background-color: black;
-    border: 2px solid #0BDCF3; /* Bordure bleue claire */
-    border-radius: 30px; /* Coins arrondis */
-    padding: 37px;
-    color: #fff; /* Texte blanc */
+    border: 2px solid #0BDCF3;
+    border-radius: 30px;
+
+    /*padding: 37px;*/
+
+    color : white;
+
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    height: 80%;
-    width: 40%;
-}
+    
 
+    width : 100%;
+    height : 100%;
+
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+}
 
 li {
     margin-bottom : 6px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2.4vw;
+
     font-weight: bold;
+
+    border : 3px solid green;
 }
 
 .prix {
-    font-size: 45px;
-    color: #0BDCF3; /* Texte bleu clair */
-
+    font-size: 3.5vw;
+    color: #0BDCF3;
     font-weight: bold;
+
+    border : 3px solid pink;
 }
 
 .caracteristiques {
-    padding-left: 0; /* Supprime la marge à gauche de la liste */
-
+   
     text-align : left;
+
+    height : 65%;
+    width : 90%;
+
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: start;
+
+    border : 3px orange solid;
 }
 
-    .caracteristiques li {
-        font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+.caracteristiques li {
+    font-size: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.separation {
+    width: 62%;
+    height: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 3px red solid;
+}
+
+.rectangle {
+    width: 100%;
+    height: 17%; 
+    background-color: white;
+    border: 1px solid black; /* Optionnel : bordure d'1 pixel en noir */
+    
+    margin-left : 1%;
+    margin-right : 1%;
+
+    border-radius : 10px;
+}
+
+
 
 .bouton {
-    /*background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);*/
-
     background-color: #0BDCF3;
-    
     border: none;
-    border-radius: 100px;
+    border-radius: 20px;
     padding: 10px 20px;
-
-
-    /*color: white;*/
     color : black;
 
 
     font-weight: bold;
-    border: 3px solid white;
     font-size: 19px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 10px;
 }
 
-    .bouton:hover {
-        background-color: #005b99; /* Changement de couleur au survol */
-    }
+.bouton:hover {
+    background-color: #005b99;
+}
