@@ -2,9 +2,12 @@
     
 }
 
+/*Utiliser Position Relative pour legend bouton*/
+/*Translate pour décaler une div...*/
+
 .carte {
     background-color: black;
-    border: 2px solid #0BDCF3;
+    /*border: 2px solid #0BDCF3;*/
     border-radius: 30px;
 
     /*padding: 37px;*/
@@ -12,7 +15,7 @@
     color : white;
 
     text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
     
 
     width : 100%;
@@ -29,34 +32,61 @@ li {
 }
 
 h2 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.4vw;
-
     font-weight: bold;
 
-    border : 3px solid green;
+
+    /*border: 3px solid green;*/
 }
 
 .prix {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5vw;
     color: #0BDCF3;
     font-weight: bold;
 
-    border : 3px solid pink;
+
+    /*border: 3px solid pink;*/
+}
+
+.espacementGauche {
+
+   /* border : 3px solid brown;*/
+    width : 15%;
+}
+
+.espacementDroit {
+    /*border : 3px solid brown;*/
+    width : 4%;
 }
 
 .caracteristiques {
    
     text-align : left;
 
-    height : 65%;
+    height : 56%;
     width : 90%;
+
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items: center;
+    
+
+   /* border : 3px orange solid;*/
+}
+
+.caracteristiques ul {
+    /*border : 3px solid yellow;*/
 
     display: flex;
     flex-direction : column;
     justify-content: center;
     align-items: start;
 
-    border : 3px orange solid;
+    height : 100%;
+
 }
 
 .caracteristiques li {
@@ -64,26 +94,51 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.descriptionEtSeparation {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*border : 3px green solid;*/
+    width : 90%;
+
+    
+
+    height : 13%;
+}
+
 .separation {
-    width: 62%;
-    height: 6%;
+    width: 71%;
+    height: 40%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 3px red solid;
+
+
+    /*border: 3px red solid;*/
+}
+
+.description {
+    color: #a6a6a6;
+    font-family: Calibri;
+    font-weight: 100;
+    font-size: 1.8vw;
 }
 
 .rectangle {
     width: 100%;
-    height: 17%; 
+    height: 14%; 
     background-color: white;
-    border: 1px solid black; /* Optionnel : bordure d'1 pixel en noir */
+
+    border: 1px solid white;
     
     margin-left : 1%;
     margin-right : 1%;
 
-    border-radius : 10px;
+    /*border-radius : 10px;*/
 }
 
 

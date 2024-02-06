@@ -4,28 +4,45 @@
 
     <p class="prix">@Prix</p>
 
-    <div class="separation">
+    <div class="descriptionEtSeparation">
+        
+        <div class="description">
 
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
+            @if (Description != null)
+            {
+                <p>
+                    @Description
+                </p>
+            }
 
-    </div>
+        </div>
+
+        <div class="separation">
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+
+        </div>
+    </div>    
+
+    
 
     <div class="caracteristiques">
+        <div class="espacementDroit">
+        </div>
         <ul>
 
             @foreach (var Caracteristique in Caracteristiques)
@@ -34,6 +51,9 @@
             }
 
         </ul>
+
+        <div class="espacementGauche">
+        </div>
     </div>
 
     @* <button class="bouton">Commencer</button> *@

@@ -5,21 +5,16 @@ namespace portfolioVision.composants.carteFortaits
     public partial class CarteForfaits
     {
         [Parameter]
-        public String Titre { get; set; }
+        public String? Titre { get; set; }
 
         [Parameter]
-        public String Prix { get; set; }
+        public String? Prix { get; set; }
 
         [Parameter]
-        public List<String> Caracteristiques { get; set; }
+        public List<String>? Caracteristiques { get; set; }
 
-        //public CarteForfaits(String Titre, String Prix, List<String> Caracteristiques) {
-        
-        //    this.Titre = Titre;
-        //    this.Prix = Prix;
-        //    this.Caracteristiques = Caracteristiques;
-        
-        //}
+        [Parameter]
+        public String? Description { get; set; }
 
         protected async override Task OnInitializedAsync()
         {
