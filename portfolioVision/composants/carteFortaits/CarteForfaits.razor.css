@@ -47,7 +47,7 @@ h2 {
     align-items: start;
 
 
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 
 .prix {
@@ -64,7 +64,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    border: 3px solid pink;
+    /*border: 3px solid pink;*/
 }
 
 .espacementGauche {

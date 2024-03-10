@@ -19,6 +19,8 @@ namespace portfolioVision.Pages.Index
         private List<Reseau> Reseaux;
 
 
+
+
         protected override async Task OnInitializedAsync()
         {
             
