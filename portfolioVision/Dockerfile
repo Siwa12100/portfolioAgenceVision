@@ -8,7 +8,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["./portfolioVision.csproj", "portfolioVision/"]
+COPY ["./portfolioVision.csproj", "./"]
+
 RUN dotnet restore "./portfolioVision.csproj"
 COPY . .
 WORKDIR "/src/portfolioVision"
@@ -21,4 +22,3 @@ RUN dotnet publish "./portfolioVision.csproj" -c $BUILD_CONFIGURATION -o /app/pu
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "portfolioVision.dll"]
